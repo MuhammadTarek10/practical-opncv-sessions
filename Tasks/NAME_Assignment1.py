@@ -47,6 +47,16 @@ def zero_channel(image, channel):
 
     return result
 
+def convert_to_gray(image):
+    '''
+        inputs:
+            image: the source image, colord
+        outputs:
+            result: image in gray scale
+    '''
+
+    return result
+
 def divide_image_horizontally(image, divisions):
     '''
         inputs:
