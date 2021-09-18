@@ -39,7 +39,7 @@ def tozero_threshold(image, min_threshold):
 def zero_channel(image, channel):
     '''
         inputs:
-            image: the source image, colord
+            image: the source image, colored
             channel: the channel you want to make zero
         outputs:
             result: output image with zeroed channel
@@ -50,7 +50,7 @@ def zero_channel(image, channel):
 def convert_to_gray(image):
     '''
         inputs:
-            image: the source image, colord
+            image: the source image, colored
         outputs:
             result: image in gray scale
     '''
@@ -60,7 +60,7 @@ def convert_to_gray(image):
 def divide_image_horizontally(image, divisions):
     '''
         inputs:
-            image: the source image
+            image: the source image, colored or gray scale
             divisions: how many divisions you want in image horizontally
         output:
             result: a list of length=divisions, contains divided images
@@ -71,7 +71,7 @@ def divide_image_horizontally(image, divisions):
 def divide_image_vertically(image, divisions):
     '''
         inputs:
-            image: the source image
+            image: the source image, colored or gray scale
             divisions: how many divisions you want in image vertically
         output:
             result: a list of length=divisions, contains divided images
